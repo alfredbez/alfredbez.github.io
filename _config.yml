@@ -1,0 +1,22 @@
+baseurl:
+title: Alfreds Blog
+subtitle: modern web-development
+author: alfred bez
+simple_search: http://google.com/search
+name: alfredbez
+highlighter: rouge
+markdown: kramdown
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+permalink: /articles/:short_year/:title
+timezone: Europe/Berlin
+excerpt_separator: <!--more-->  # you can specify your own separator, of course.
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'UploadToGithub.Rakefile', 'README.md']
+post:
+  template: _post.txt
+  extension: md
+page:
+  template: _page.txt
+  extension: md
+editor: subl
+git:
+  branch: master

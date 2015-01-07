@@ -1,0 +1,18 @@
+<footer>
+  <hr class="slender">
+  <ul class="footer-links">
+    <li><a href="mailto:hate@spam.net"><span class="icon-mail"></span></a></li>
+    {% for entry in site.data.social %}
+      <li>
+        <a href="{{ entry.link }}"><span class="{{ entry.icon }}"></span></a>
+      </li>
+    {% endfor %}
+  </ul>
+<div class="credits">
+<span>&copy; {{ site.time | date: '%Y' }} &nbsp;&nbsp;{{site.author | upcase }}</span></br> <br>
+<span>build with <svg class="heart" viewBox="0 0 32 29.6">
+  <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+    c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+</svg> using <a href="//github.com/clayh53/tufte-jekyll">tufte theme</a> & <a href="//jekyllrb.com">jekyll</a></span>
+</div>
+</footer>
