@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Alfred Bez - Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mein persönlicher Blog, in dem ich einige Notizen für mich festhalte. Zum Mitlesen.">
+    <meta name="author" content="Alfred Bez">
+    
+    <link rel="canonical" href="http://www.alfredbez.de/page2/">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/pixyll.css" type="text/css">
+
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+    
+
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Alfred Bez - Blog">
+    <meta property="og:description" content="Mein persönlicher Blog, in dem ich einige Notizen für mich festhalte. Zum Mitlesen.">
+    <meta property="og:url" content="http://www.alfredbez.de/page2/">
+    <meta property="og:site_name" content="Alfred Bez - Blog">
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+        
+    
+</head>
+
+<body class="">
+  <div class="site-wrap">
+    <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="http://www.alfredbez.de" class="site-title">Alfred Bez - Blog</a>
+      <nav class="site-nav right">
+        <a href="/about/">About</a>
+<a href="/contact/">Contact</a>
+
+      </nav>
+      <div class="clearfix"></div>
+      
+    </div>
+  </div>
+</header>
+
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        <div class="home">
+
+  <div class="posts">
+    
+      <div class="post">
+        <p class="post-meta">Sep 9, 2014</p>
+        <a href="/anleitungen/typo3/2014/09/09/typo3-trustedhostspattern-mit-und-ohne-www/" class="post-link"><h3 class="h2 post-title">Typo3: trustedHostsPattern mit und ohne www</h3></a>
+        <p class="post-summary">
+          
+            <p>Am 22.05.2014 wurde die Konfigurationsoption &ldquo;trustedHostsPattern&rdquo; in Typo3 eingef&uuml;hrt. Hierdurch sollen &ldquo;Host Spoofing&rdquo;-Attacken verhindert werden. siehe dazu&nbsp;<a title="Multiple Vulnerabilities in TYPO3 CMS" href="http:&#47;&#47;typo3.org&#47;teams&#47;security&#47;security-bulletins&#47;typo3-core&#47;typo3-core-sa-2014-001&#47;" target="_blank">Multiple Vulnerabilities in TYPO3 CMS<&#47;a></p>
+
+<p>Die Host Pattern werden in die localconf.php bzw. LocalConfiguration.php geschrieben.</p>
+
+<p>localconf.php<br />
+<strong>$GLOBALS[&lsquo;TYPO3_CONF_VARS&rsquo;]['SYS&rsquo;]['trustedHostsPattern&rsquo;] = 'deinPattern&rsquo;;<&#47;strong></p>
+
+<p>LocalConfiguration.php (innerhalb des 'SYS&rsquo;-Arrays)<br />
+<strong>'trustedHostsPattern&rsquo; => 'deinPattern&rsquo;,<&#47;strong></p>
+
+<p><hr &#47;>
+<p>Bei den meisten Projekten ruft man die Seite &uuml;ber www.domain.de bzw. einfach &uuml;ber domain.de (ohne www) auf.<br />
+Daf&uuml;r m&uuml;sst ihr als Pattern &rsquo;<strong>(www.)?domain.de&lt;&#47;strong&gt;&rsquo; w&auml;hlen</p>
+<p><strong>UPDATE&lt;&#47;strong&gt; die Extension <a href="http:&#47;&#47;typo3.org&#47;extensions&#47;repository&#47;view&#47;hosts_pattern" title="hosts_pattern" target="_blank">hosts_pattern&lt;&#47;a&gt; generiert den Wert automatisch und spart so Zeit.</p></p>
+
+          
+        </p>
+      </div>
+    
+      <div class="post">
+        <p class="post-meta">Sep 8, 2014</p>
+        <a href="/workflow/2014/09/08/sublime-text-regex-snippets/" class="post-link"><h3 class="h2 post-title">(Sublime Text) Regex Snippets</h3></a>
+        <p class="post-summary">
+          
+            <p>Dies ist in erster Linie eine kleine Snippet-Sammlung für mich. Für Verbesserungsvorschläge und eure eigenen Snippets bin ich trotzdem dankbar.</p>
+
+          
+        </p>
+      </div>
+    
+      <div class="post">
+        <p class="post-meta">Jun 5, 2014</p>
+        <a href="/oxid%20eshop/anleitungen/2014/06/05/oxid-clear-tmp-modul-installieren/" class="post-link"><h3 class="h2 post-title">OXID - "Clear tmp" Modul installieren</h3></a>
+        <p class="post-summary">
+          
+            <p>Das Modul &ldquo;Clear tmp&rdquo; erm&ouml;glicht das einfache L&ouml;schen des Caches im Backend.</p>
+
+<p>Die Installation ist sehr einfach:</p>
+
+<p>1. aktuelle Version des Moduls herunterladen (<a href="https:&#47;&#47;github.com&#47;OXIDCookbook&#47;ocb_cleartmp&#47;archive&#47;master.zip" title="github" target="_blank">https:&#47;&#47;github.com&#47;OXIDCookbook&#47;ocb_cleartmp&#47;archive&#47;master.zip<&#47;a>)<br />
+2. den Ordner &ldquo;ocb_cleartmp&rdquo; in den &ldquo;modules&rdquo; Ordner von OXID kopieren<br />
+3. Im Backend unter &ldquo;Erweiterungen&rdquo; -> &ldquo;Module&rdquo; auf &ldquo;OXID Cookbook :: Clear tmp&rdquo; klicken<br />
+4. aktivieren, indem man rechts auf den Button klickt<br />
+5. tmp-Ordner einmal manuell leeren, Backend neu laden</p>
+
+          
+        </p>
+      </div>
+    
+  </div>
+
+  <div class="pagination clearfix mb1 mt4">
+  <div class="left">
+    
+      
+        <a class="pagination-item" href="/">Newer</a>
+      
+    
+  </div>
+  <div class="right">
+    
+      <a class="pagination-item" href="/page3/">Older</a>
+    
+  </div>
+</div>
+
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+  <div class="p2 wrap">
+    <div class="measure mt1 center">
+      <small>
+        Crafted with &lt;3 by <a href="http://johnotander.com">John Otander</a> (<a href="https://twitter.com/4lpine">@4lpine</a>).<br>
+        &lt;/&gt; available on <a href="https://github.com/johnotander/pixyll">Github</a>.
+      </small>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

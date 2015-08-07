@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Einstieg in SASS &#8211; Alfred Bez - Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mein persönlicher Blog, in dem ich einige Notizen für mich festhalte. Zum Mitlesen.">
+    <meta name="author" content="Alfred Bez">
+    <meta name="keywords" content="anleitungen">
+    <link rel="canonical" href="http://www.alfredbez.de/anleitungen/2014/12/12/bkm-einstieg-in-sass/">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/pixyll.css" type="text/css">
+
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+    
+
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Einstieg in SASS">
+    <meta property="og:description" content="Mein persönlicher Blog, in dem ich einige Notizen für mich festhalte. Zum Mitlesen.">
+    <meta property="og:url" content="http://www.alfredbez.de/anleitungen/2014/12/12/bkm-einstieg-in-sass/">
+    <meta property="og:site_name" content="Alfred Bez - Blog">
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+        
+    
+</head>
+
+<body class="">
+  <div class="site-wrap">
+    <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="http://www.alfredbez.de" class="site-title">Alfred Bez - Blog</a>
+      <nav class="site-nav right">
+        <a href="/about/">About</a>
+<a href="/contact/">Contact</a>
+
+      </nav>
+      <div class="clearfix"></div>
+      
+    </div>
+  </div>
+</header>
+
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        
+
+
+<div class="post-header mb2">
+  <h1>Einstieg in SASS</h1>
+  <span class="post-meta">Dec 12, 2014</span><br>
+  
+  <span class="post-meta small">1 minute read</span>
+</div>
+
+<article class="post-content">
+  <p>In dieser Einleitung gebe ich anhand einiger Code-Beispiele einen Einstieg in SASS (Syntactically Awesome Stylesheets)</p>
+
+<p><blockquote><p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.&lt;&#47;blockquote&gt;</p>
+<p>Ich empfehle jedem, der SASS lernen will, einen Blick in den <i><a href="http:&#47;&#47;sass-lang.com&#47;guide" traget="_blank">Guide&lt;&#47;a&gt;&lt;&#47;i&gt; und die <i><a href="http:&#47;&#47;sass-lang.com&#47;documentation&#47;file.SASS_REFERENCE.html" target="_blank">Dokumentation&lt;&#47;a&gt;&lt;&#47;i&gt; zu werfen.</p>
+<p><a id="more"></a><a id="more-70"></a></p>
+<p>Die Beispiele, die ich hier zeige, habe ich mit <a href="http:&#47;&#47;sassmeister.com&#47;" target="_blank">SassMeister&lt;&#47;a&gt; erstellt. Dort kann man ganz einfach Sass Code eingeben und sofort sehen, wie dieser in CSS umgewandelt wird. Man kann dort auch HTML schreiben, um den geschriebenen Code zu testen.</p>
+<p><strong>Variablen&lt;&#47;strong&gt;<br />
+$variablenname: wert;</p>
+<p class="sassmeister" data-gist-id="4e6b5b7e23aa755b0aa9" data-height="320" data-theme="tomorrow">&lt;&#47;p&gt;<script src="http:&#47;&#47;cdn.sassmeister.com&#47;js&#47;embed.js" async>&lt;&#47;script&gt;</p>
+<hr>
+<p><strong>(Farb-)Funktionen&lt;&#47;strong&gt;<br />
+Eine komplette Liste der Funktionen findet man <a href="http:&#47;&#47;sass-lang.com&#47;documentation&#47;Sass&#47;Script&#47;Functions.html#lighten-instance_method" target="_blank">hier&lt;&#47;a&gt;</p>
+<p class="sassmeister" data-gist-id="7b770e04da4b436aa2c5" data-height="320" data-theme="tomorrow"><a href="http:&#47;&#47;sassmeister.com&#47;gist&#47;7b770e04da4b436aa2c5">Play with this gist on SassMeister.&lt;&#47;a&gt;&lt;&#47;p&gt;<script src="http:&#47;&#47;cdn.sassmeister.com&#47;js&#47;embed.js" async>&lt;&#47;script&gt;</p>
+<hr>
+<p><strong>Verschachtelung&lt;&#47;strong&gt;<br />
+Beim Verschachteln bitte darauf achten, dass ihr nicht mehr als drei Ebenen im resultierenden CSS habt.</p>
+<p class="sassmeister" data-gist-id="041dcd36d3768b877c01" data-height="320" data-theme="tomorrow"><a href="http:&#47;&#47;sassmeister.com&#47;gist&#47;041dcd36d3768b877c01">Play with this gist on SassMeister.&lt;&#47;a&gt;&lt;&#47;p&gt;<script src="http:&#47;&#47;cdn.sassmeister.com&#47;js&#47;embed.js" async>&lt;&#47;script&gt;</p>
+<hr>
+<p><strong>Verschachtelung (2. Beispiel)&lt;&#47;strong&gt;</p>
+<p>Bei verschachtelten Elementen wird in der Regel ein Leerzeichen zwischen die Selektoren eingef&uuml;gt. Um dies zu verhindern, muss man vor den gew&uuml;nschten Selektor ein &#39;&amp;&#39; einf&uuml;gen. (Stickwort &#39;Pseudo-Elemente&#39; oder &#39;Pseudo-Klassen&#39;)</p>
+<p class="sassmeister" data-gist-id="1c4e535ebf914251afe4" data-height="320" data-theme="tomorrow"><a href="http:&#47;&#47;sassmeister.com&#47;gist&#47;1c4e535ebf914251afe4">Play with this gist on SassMeister.&lt;&#47;a&gt;&lt;&#47;p&gt;<script src="http:&#47;&#47;cdn.sassmeister.com&#47;js&#47;embed.js" async>&lt;&#47;script&gt;</p>
+<hr>
+<p><strong>Mixins&lt;&#47;strong&gt;</p>
+<p>Eigene <i>Funktionen&lt;&#47;i&gt; in SASS</p>
+<p class="sassmeister" data-gist-id="fa96e696bbcd72b0bf8f" data-height="320" data-theme="tomorrow"><a href="http:&#47;&#47;sassmeister.com&#47;gist&#47;fa96e696bbcd72b0bf8f">Play with this gist on SassMeister.&lt;&#47;a&gt;&lt;&#47;p&gt;<script src="http:&#47;&#47;cdn.sassmeister.com&#47;js&#47;embed.js" async>&lt;&#47;script&gt;</p>
+<hr>
+<p><strong>extend&lt;&#47;strong&gt;</p>
+<p>CSS-Regeln k&ouml;nnen &#39;vererbt&#39; und mit eigenen Werten erweitert&#47;&uuml;berschrieben werden.</p>
+<p class="sassmeister" data-gist-id="fe0a9a2ee15422bb6db3" data-height="320" data-theme="tomorrow"><a href="http:&#47;&#47;sassmeister.com&#47;gist&#47;fe0a9a2ee15422bb6db3">Play with this gist on SassMeister.&lt;&#47;a&gt;&lt;&#47;p&gt;<script src="http:&#47;&#47;cdn.sassmeister.com&#47;js&#47;embed.js" async>&lt;&#47;script&gt;</p>
+<hr>
+<p><strong>extend (placeholder)&lt;&#47;strong&gt;</p>
+<p>Placeholder verhalten sich so wie CSS-Regeln, die allerdings nicht im gerenderten CSS vorhanden sind. Placeholder sind nur f&uuml;r @extend gedacht.</p>
+<p class="sassmeister" data-gist-id="a2788a58a0d9c23a5d9d" data-height="320" data-theme="tomorrow"><a href="http:&#47;&#47;sassmeister.com&#47;gist&#47;a2788a58a0d9c23a5d9d">Play with this gist on SassMeister.&lt;&#47;a&gt;&lt;&#47;p&gt;<script src="http:&#47;&#47;cdn.sassmeister.com&#47;js&#47;embed.js" async>&lt;&#47;script&gt;</p>
+<hr>
+<p><strong>Operatoren&lt;&#47;strong&gt;</p>
+<p>SASS bietet eine Reihe von Operatoren. <a href="http:&#47;&#47;sass-lang.com&#47;documentation&#47;file.SASS_REFERENCE.html#operations" target="_blank">siehe Dokumentation&lt;&#47;a&gt;</p>
+<ul>
+<li>Number Operations&lt;&#47;li&gt;
+<li>Color Operations&lt;&#47;li&gt;
+<li>String Operations&lt;&#47;li&gt;
+<li>Boolean Operations&lt;&#47;li&gt;
+<li>List Operations&lt;&#47;li&gt;<br />
+&lt;&#47;ul&gt;</p>
+<p class="sassmeister" data-gist-id="0afb593d7aef40df5a22" data-height="320" data-theme="tomorrow"><a href="http:&#47;&#47;sassmeister.com&#47;gist&#47;0afb593d7aef40df5a22">Play with this gist on SassMeister.&lt;&#47;a&gt;&lt;&#47;p&gt;<script src="http:&#47;&#47;cdn.sassmeister.com&#47;js&#47;embed.js" async>&lt;&#47;script&gt;</p>
+<hr>
+<p><strong>Operatoren (erweitertes Beispiel)&lt;&#47;strong&gt;</p>
+<p class="sassmeister" data-gist-id="935bfb3d4821d8f0a574" data-height="320" data-theme="tomorrow"><a href="http:&#47;&#47;sassmeister.com&#47;gist&#47;935bfb3d4821d8f0a574">Play with this gist on SassMeister.&lt;&#47;a&gt;&lt;&#47;p&gt;<script src="http:&#47;&#47;cdn.sassmeister.com&#47;js&#47;embed.js" async>&lt;&#47;script&gt;</p></p>
+ 
+</article>
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+  <div class="p2 wrap">
+    <div class="measure mt1 center">
+      <small>
+        Crafted with &lt;3 by <a href="http://johnotander.com">John Otander</a> (<a href="https://twitter.com/4lpine">@4lpine</a>).<br>
+        &lt;/&gt; available on <a href="https://github.com/johnotander/pixyll">Github</a>.
+      </small>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

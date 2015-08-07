@@ -1,18 +1,24 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Alfred Bez: GitHub Page</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="Alfred Bez: GitHub Page">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css">
-    <style type="text/css"></style>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Hello</h1>
-    </div>
-  </body>
-  <script type="text/javascript"></script>
-</html>
+---
+layout: default
+---
+
+<div class="home">
+
+  <div class="posts">
+    {% for post in paginator.posts %}
+      <div class="post">
+        <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h2 post-title">{{ post.title }}</h3></a>
+        <p class="post-summary">
+          {% if post.summary %}
+            {{ post.summary }}
+          {% else %}
+            {{ post.excerpt }}
+          {% endif %}
+        </p>
+      </div>
+    {% endfor %}
+  </div>
+
+  {% include pagination.html %}
+</div>
